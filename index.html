@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankita Baler | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8ff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0d47a1;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            font-size: 26px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #bbdefb;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1565c0, #42a5f5);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: white;
+            color: #0d47a1;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #e3f2fd;
+        }
+
+        section {
+            padding: 50px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #0d47a1;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #1565c0;
+            margin-bottom: 12px;
+        }
+
+        .project-card h3 a {
+            color: #1565c0;
+            text-decoration: none;
+        }
+
+        .project-card h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: #1565c0;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #1565c0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            section {
+                padding: 40px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Ankita Baler</h1>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Hello, I'm Ankita Baler</h2>
+        <p>B.Tech CSIT Student | Aspiring Software Developer</p>
+        <a href="#projects" class="btn">View My Projects</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+
+        <p>
+            My name is Ankita Baler, and I am a 3rd-semester B.Tech student
+            in Computer Science and Information Technology (CSIT).
+            I am passionate about learning programming and improving my
+            problem-solving skills. I enjoy building practical projects
+            and exploring new technologies.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <h3>
+                    <a href="https://github.com/ankitabalER/hello-world"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Hello World in C
+                    </a>
+                </h3>
+
+                <p>
+                    A beginner-level C programming project demonstrating
+                    the basic structure of a program and displaying
+                    the Hello World message.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Pair Programming Collaboration</h3>
+
+                <p>
+                    A collaborative coding activity using Git, GitHub,
+                    and Visual Studio Code Live Share to practice
+                    teamwork and version control.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>
+                    <a href="https://github.com/ankitabalER/leetcode-solutions"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        LeetCode Solutions
+                    </a>
+                </h3>
+
+                <p>
+                    A collection of coding solutions created while
+                    practicing programming problems and improving
+                    logical thinking and problem-solving skills.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-list">
+            <span class="skill">C Programming</span>
+            <span class="skill">Python</span>
+            <span class="skill">Problem Solving</span>
+            <span class="skill">Git</span>
+            <span class="skill">GitHub</span>
+            <span class="skill">HTML</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/ankitabalER"
+               target="_blank"
+               rel="noopener noreferrer">
+                Visit My GitHub Profile
+            </a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ankita Baler | Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
